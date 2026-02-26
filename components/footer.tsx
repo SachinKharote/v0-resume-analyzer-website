@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-card px-6 py-12">
+    <footer className="border-t border-border/50 bg-background/50 backdrop-blur-sm px-6 py-12">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="flex items-center gap-2">
@@ -15,22 +15,22 @@ export function Footer() {
 
           <nav className="flex items-center gap-6" aria-label="Footer navigation">
             <Link
-              href="#features"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Features
-            </Link>
-            <Link
-              href="#how-it-works"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              How It Works
-            </Link>
-            <Link
-              href="#upload"
+              href="/analyze"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               Analyze
+            </Link>
+            <Link
+              href="/job-match"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Job Match
+            </Link>
+            <Link
+              href="/enhance"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              AI Enhance
             </Link>
           </nav>
 
