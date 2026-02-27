@@ -63,7 +63,7 @@ export default function JobMatchPage() {
       }
 
       if (!text || text.trim().length < 50) {
-        setError("Please provide a resume with at least 50 characters of text.")
+        setError("Please provide a Resume with at least 50 characters of text.")
         setIsMatching(false)
         return
       }
