@@ -69,7 +69,7 @@ export default function JobMatchPage() {
       }
 
       if (!jobDescription || jobDescription.trim().length < 30) {
-        setError("Please provide a job description with at least 30 characters.")
+        setError("Please provide the required job description with at least 30 characters.")
         setIsMatching(false)
         return
       }
